@@ -1,5 +1,54 @@
 {
-	"spider": "./custom_spider.jar;md5;d141286fdf0ac8824781e7acd76b8885",
+	"spider": "./custom_spider.jar;md5;43989964965deab2a4b6b48251043412",
+	"lives": [{
+			"name": "feiyang.allinone",
+			"type": 0,
+			"url": "http://127.0.0.1:35455/tv.m3u",
+			"ua": "okhttp/3.15",
+			"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+			"logo": "https://epg.112114.xyz/logo/{name}.png"
+		},
+		{
+			"name": "feiyang.tptv",
+			"type": 0,
+			"url": "http://127.0.0.1:35455/tptv.m3u",
+			"ua": "okhttp/3.15",
+			"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+			"logo": "https://epg.112114.xyz/logo/{name}.png"
+		},
+		{
+			"name": "feiyang.bililive",
+			"type": 0,
+			"url": "http://127.0.0.1:35455/bililive.m3u",
+			"ua": "okhttp/3.15",
+			"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+			"logo": "https://epg.112114.xyz/logo/{name}.png"
+		},
+		{
+			"name": "feiyang.huyayqk",
+			"type": 0,
+			"url": "http://127.0.0.1:35455/huyayqk.m3u",
+			"ua": "okhttp/3.15",
+			"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+			"logo": "https://epg.112114.xyz/logo/{name}.png"
+		},
+		{
+			"name": "feiyang.douyuyqk",
+			"type": 0,
+			"url": "http://127.0.0.1:35455/douyuyqk.m3u",
+			"ua": "okhttp/3.15",
+			"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+			"logo": "https://epg.112114.xyz/logo/{name}.png"
+		},
+		{
+			"name": "feiyang.yylunbo",
+			"type": 0,
+			"url": "http://127.0.0.1:35455/yylunbo.m3u",
+			"ua": "okhttp/3.15",
+			"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+			"logo": "https://epg.112114.xyz/logo/{name}.png"
+		}
+	],
 	"sites": [{
 			"key": "豆瓣",
 			"name": "豆瓣",
@@ -7,7 +56,10 @@
 			"api": "csp_Douban",
 			"searchable": 0,
 			"changeable": 1,
-			"ext": "./json/douban.json"
+			"ext": {
+				"commonConfig": "./json/peizhi.json",
+				"filter": "./json/douban.json"
+			}
 		},
 		{
 			"key": "玩偶gg",
@@ -21,6 +73,17 @@
 				"siteUrl": "https://www.wogg.bf/",
 				"filter": "./json/wogg.json"
 			}
+		},
+		{
+			"key": "lf_live10_min",
+			"name": " 路飞丨Live",
+			"type": 3,
+			"searchable": 0,
+			"quickSearch": 1,
+			"filterable": 1,
+			"changeable": 1,
+			"api": "./lib/lf_live10_min-output.js",
+			"ext": "./json/lf_live.json"
 		},
 		{
 			"key": "哔哩FM",
