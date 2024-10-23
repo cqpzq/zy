@@ -1,5 +1,5 @@
 {
-	"spider": "./custom_spider.jar;md5;a812e6d7f82fcba684ff862a1430463e",
+	"spider": "./custom_spider.jar;md5;7ce3af803e986f79260f9d88c9bf2c35",
 	"lives": [{
 			"name": "feiyang.allinone",
 			"type": 0,
@@ -228,6 +228,21 @@
 				"siteUrl": "http://127.0.0.1:9999",
 				"channelUsername": "hao115,guaguale115,dianyingshare,XiangxiuNB,yunpanpan,kuakeyun,zaihuayun,Quark_Movies,alyp_4K_Movies,vip115hot,yunpanshare,ucwangpan,Quark_Share_Channel,Aliyundrive_Share_Channel,shareAliyun,ikiviyyp,wanwansubchat,wangpanziyuan2021,alyp_1,quanziyuanshe",
 				"commonConfig": "./json/peizhi.json"
+			}
+		},
+		{
+			"key": "TgYunDouBanPan|服务器",
+			"name": "TgYunDouBanPan|服务器",
+			"type": 3,
+			"api": "csp_TgYunDouBanPan",
+			"searchable": 1,
+			"filterable": 0,
+			"switchable": 0,
+			"ext": {
+				"siteUrl": "http://127.0.0.1:9999",
+				"channelUsername": "hao115,guaguale115,dianyingshare,XiangxiuNB,yunpanpan,kuakeyun,zaihuayun,Quark_Movies,alyp_4K_Movies,vip115hot,yunpanshare,ucwangpan,Quark_Share_Channel,Aliyundrive_Share_Channel,shareAliyun,ikiviyyp,wanwansubchat,wangpanziyuan2021,alyp_1,quanziyuanshe",
+				"commonConfig": "./json/peizhi.json",
+				"filter": "./json/douban.json"
 			}
 		},
 		{
